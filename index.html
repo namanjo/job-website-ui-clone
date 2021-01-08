@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naukri Clone</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Lato:100,300,300i,400&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -15,15 +16,23 @@
       <div class="content-wrapper">
         <nav class="main-nav container">
           <ul class="clearfix">
-            <li><a href="index.html">My<span class="blue-span">Jobs</span></a></li>
-            <li><a href="html/login.html">Login/Signup</a></li>
+
+            <div class="left-float">
+              <li><a href="index.html" id="logo">My<span class="blue-span">Jobs</span></a></li>
+              <li><a href="html/user_flow.html">Candidate flow</a></li>
+              <li><a href="index.html">Recruiter flow</a></li>
+            </div>
+
+            <div class="right-float">
+              <li><a href="html/login.html" id="login-btn">Login/Signup</a></li>
+            </div>
           </ul>
           <hr>
         </nav>
         <div class="header-wrapper">
           <div class="hero-text-box container">
             <h1>Welcome to my jobs</h1>
-            <a class="btn btn-full js--scroll-to-section-blogs" href="#">Get Started</a>
+            <a class="submit-button" href="#">Get Started</a>
           </div>
         </div>
       </div>
@@ -32,7 +41,9 @@
 
 
 
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

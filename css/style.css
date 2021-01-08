@@ -51,6 +51,20 @@ h3{
   margin-bottom: 10px;
 }
 
+hr{
+  background: #f1f1f1;
+  border: 0;
+  height: .2px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.hero-text-box{
+  margin-top: 70px;
+}
+
 .content-wrapper{
   height: 320px;
   background: transparent linear-gradient(253deg, var(--unnamed-color-303f60) 0%, #1A253C 100%) 0% 0% no-repeat padding-box;
@@ -68,28 +82,34 @@ header{
 
 .main-nav ul{
   list-style: none;
-  padding: 15px 0;
+  padding: 10px 0;
   color: #fff;
 }
 
 .main-nav ul li{
 display: inline-block;
-opacity: 1;
+padding: 10px 15px 10px 0;
 }
 
-.main-nav ul li:nth-of-type(1){
-  font: normal normal bold 22px/27px Lato;
+.left-float{
   float: left;
-  margin-top: 5px;
 }
 
-.main-nav ul li:nth-of-type(2){
+.right-float{
+  float: right;
+}
+
+#logo{
+  font: normal normal bold 22px/27px Lato;
+}
+
+#login-btn{
+  display: inline-block;
   border: 1px solid var(--unnamed-color-43afff);
   background: #43AFFF33 0% 0% no-repeat padding-box;
   border: 1px solid #43AFFF;
   border-radius: 5px;
-  padding: 10px;
-  float: right;
+  padding: 8px;
 }
 
 .main-nav ul li a{
@@ -98,8 +118,10 @@ color: #fff;
 }
 
 .submit-button{
-  width: 148px;
-  height: 46px;
+  display: inline-block;
+  /* width: 148px;
+  height: 46px; */
+  padding: .7em 2em;
   color: #fff;
   cursor: pointer;
   background: var(--unnamed-color-43afff) 0% 0% no-repeat padding-box;
@@ -107,12 +129,18 @@ color: #fff;
   background: #43AFFF 0% 0% no-repeat padding-box;
   border: 1px solid #43AFFF;
   border-radius: 5px;
+  text-decoration: none;
   opacity: 1;
+  border: 0;
+}
+.submit-button:hover{
+  color: #fff;
 }
 
 .plain-button{
-width: 136px;
-height: 46px;
+color: #000;
+display: inline-block;
+padding: .7em 2em;
 background: #E8E8E833 0% 0% no-repeat padding-box;
 border: 1px solid #C6C6C6;
 border-radius: 5px;
@@ -120,13 +148,27 @@ opacity: 1;
 cursor: pointer;
 }
 
+.plain-button:hover{
+  color: #000;
+}
+
+.active{
+  /* background: var(--unnamed-color-43afff) 0% 0% no-repeat padding-box; */
+  background: #43AFFF 0% 0% no-repeat padding-box;
+  color: #fff;
+}
+
+.active:hover{
+  color: #fff;
+}
+
 .apply-btn{
-  width: 60px;
-  height: 32px;
+  cursor: pointer;
+  display: inline-block;
+  padding: .4em .7em;
   background: #43AFFF33 0% 0% no-repeat padding-box;
   border-radius: 5px;
   border: none;
-  padding: 5px;
   float: right;
 }
 
@@ -137,7 +179,6 @@ cursor: pointer;
   position: relative;
   margin-top: -200px;
   width: 480px;
-  height: 350px;
   padding: 20px;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -177,10 +218,6 @@ input[type=password]{
 
 .content-wrapper p, hr{
   color: #fff;
-}
-
-.signup-wrapper{
-  height: 600px;
 }
 
 .card{
