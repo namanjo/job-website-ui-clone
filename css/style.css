@@ -80,14 +80,22 @@ header{
   color: #43AFFF;
 }
 
-.main-nav ul{
+.main-nav{
   list-style: none;
   padding: 10px 0;
-  color: #fff;
 }
 
-.main-nav ul li{
+.main-nav li{
 display: inline-block;
+
+}
+
+.main-nav ul li a:link,
+.main-nav ul li a:visited{
+/* display: inline-block; */
+display: inline-block;
+text-decoration: none;
+color: #fff;
 padding: 10px 15px 10px 0;
 }
 
@@ -112,15 +120,8 @@ padding: 10px 15px 10px 0;
   padding: 8px;
 }
 
-.main-nav ul li a{
-text-decoration: none;
-color: #fff;
-}
-
 .submit-button{
   display: inline-block;
-  /* width: 148px;
-  height: 46px; */
   padding: .7em 2em;
   color: #fff;
   cursor: pointer;
@@ -171,6 +172,16 @@ cursor: pointer;
   border: none;
   float: right;
 }
+
+.usr-btn-round{
+  display:block;
+  padding: .6em 1em;
+  background: #D9EFFF 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+}
+
 
 /*********************/
 /*****Form Styles*****/
