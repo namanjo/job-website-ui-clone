@@ -19,6 +19,10 @@
             <div class="left-float">
               <li><a href="../index.html" id="logo">My<span class="blue-span">Jobs</span></a></li>
             </div>
+            <div class="right-float">
+              <li><a style="border-bottom: 1px solid #43AFFF" href="post_job.html">Post a job</a></li>
+              <li class="usr-btn-round">R</li>
+            </div>
 
           </ul>
           <hr>
@@ -30,16 +34,21 @@
         <h3>Login</h3>
         <form class="needs-validation" novalidate>
           <div class="form-item">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-            <div class="invalid-feedback">Email required</div>
+            <label for="title">Job Title*</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Job title" required>
+            <div class="invalid-feedback">Job title required</div>
           </div>
 
           <div class="form-item">
-            <label for="password">Password:</label>
-            <p style="float:right"><a href="forgot_password.html">Forgot Password?</a></p>
-            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-            <div class="invalid-feedback">Enter a valid password</div>
+            <label for="desc">Description</label>
+            <textarea class="form-control" id="desc" required></textarea>
+            <div class="invalid-feedback">Description required</div>
+          </div>
+
+          <div class="form-item">
+            <label for="title">Loaction</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Job title" required>
+            <div class="invalid-feedback">Location is required</div>
           </div>
 
           <button type="submit" class="submit-button cntr-btn" name="button">Login</button>

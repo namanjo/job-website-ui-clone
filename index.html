@@ -3,45 +3,134 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naukri Clone</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <title>Naukri Clone | Naman Joshi</title>
+    <link rel="stylesheet" href="icons/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Lato:100,300,300i,400&display=swap" rel="stylesheet">
   </head>
+
   <body>
 
     <header>
 
       <div class="content-wrapper">
-        <nav class="main-nav container">
-          <ul class="clearfix">
+        <nav class="main-nav container clearfix">
+          <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
 
-            <div class="left-float">
-              <li><a href="index.html" id="logo">My<span class="blue-span">Jobs</span></a></li>
-              <li><a href="html/user_flow.html">Candidate flow</a></li>
-              <li><a href="html/recruiter_flow.html">Recruiter flow</a></li>
-            </div>
-
-            <div class="right-float">
-              <li><a href="html/login.html" id="login-btn">Login/Signup</a></li>
-            </div>
+          <a href="index.html" id="logo">My<span class="blue-span">Jobs</span></a>
+          <ul class="left-float my-nav js--main-nav">
+            <li><a href="html/user_flow.html">Candidate flow</a></li>
+            <li><a href="html/recruiter_flow.html">Recruiter flow</a></li>
           </ul>
-          <hr>
+          <ul class="right-float my-nav">
+            <li><a href="html/login.html" id="login-btn">Login/Signup</a></li>
+          </ul>
         </nav>
-        <div class="header-wrapper">
-          <div class="hero-text-box container">
-            <h1>Welcome to my jobs</h1>
-            <a class="submit-button" href="#">Get Started</a>
+
+        <div class="inner-container">
+          <div class="row">
+            <div class="col-md-6 header-wrapper">
+              <div class="hero-text-box">
+                <h1>Welcome to My<span class="blue-span">Jobs</span></h1>
+                <a class="submit-button" href="html/user_flow.html">Get Started</a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="hero-image">
+                <img src="images/laptop-mobile.jpg" alt="hero-image">
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
 
     </header>
 
+    <section class="detail-section">
+      <div class="inner-container">
+        <h3>Why us</h3>
 
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title blue-span">Get more visibility</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title blue-span">Organize your work</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title blue-span">Verify their abilities</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-section">
+      <div class="inner-container">
+        <h3>Companies who trust us</h3>
+
+          <div class="row">
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/oracle.svg" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/capgemini.png" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/mindtree.png" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/airtel.png" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/cognizant.svg" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/idea.png" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/oracle.svg" alt="company">
+            </div>
+
+            <div class="col-6 col-lg-3 company-logo">
+              <img src="images/logos/capgemini.png" alt="company">
+            </div>
+          </div>
+
+
+      </div>
+
+    </section>
+    <p style="text-align:center;font-weight:bold">Developed by Naman Joshi, contact: naman14joshi@gmail.com</p>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
